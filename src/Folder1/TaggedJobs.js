@@ -1,7 +1,7 @@
 import React from "react";
 
 
-
+import InterViewStatus from "../Images/InterViewStatus.svg"
 
 import { FiDownload } from 'react-icons/fi';
 
@@ -289,13 +289,21 @@ export default function TaggedJob() {
                     <div className="ProfileTrackingLabel"><h4>Profiles Tracking</h4></div>
                     <div className="Rejected"><h4>Rejected <span id="RCount">20</span></h4></div>
                     <div className="Pending"><h4>Pending <span id="PCount">10</span></h4></div>
-                    <div className="Approved"></div>
+                    <div className="Approved"><h4>Approved <span id="ACount">00</span></h4></div>
                     <div className="BackButton"></div>
                     
                     
                     </div>
 
-                <div id="InterviewStatus">InterviewStatus</div>
+                <div id="InterviewStatus">
+                    <img src={InterViewStatus} alt="Interview Status"/>
+                        <h3>
+                            Select and get interview status once you click on approve
+                        </h3>
+                        <h4>
+                            Nothing is selected
+                        </h4>
+                </div>
 
             </div>
         </div>
